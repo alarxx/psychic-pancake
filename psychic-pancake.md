@@ -1,20 +1,24 @@
+
+**Git**
+
+Install [[Git]]:
 ```sh
 sudo apt install git
 ```
 
 ```sh
-cd /home/john/Git   
-mkdir MyProject  
-ls  
-MyProject  
-cd ./MyProject/  
+cd /home/john/Git
+mkdir MyProject
+ls
+MyProject
+cd ./MyProject/
 # ~/Git/MyProject
-git init   
+git init
 ```
 
 ```sh
-git config --global user.name "Alar-q"
-git config --global user.email alar.akilbekov@gmail.com
+git config --global user.name "username"
+git config --global user.email email@email.com
 ```
 
 ```sh
@@ -33,8 +37,9 @@ git branch --list
 ```
 
 ---
+**Python**
 
-Install Python and [[Package Installer for Python (PIP)|PIP]]:
+Install [[Python]] and [[Package Installer for Python (PIP)|PIP]]:
 ```sh
 sudo apt install python3
 sudo apt install python3-pip
@@ -56,14 +61,14 @@ Create environment:
 ```sh
 python3 -m venv .venv
 ```
-	-m - module-name, finds sys.path and runs corresponding .py file 
+	-m - module-name, finds sys.path and runs corresponding .py file
 
 Use this environment:
 ```sh
 source .venv/bin/activate
 ```
 
-Check if it works:
+You can check if it works:
 ```sh
 pip install numpy
 ```
@@ -76,6 +81,8 @@ Add this environment to .gitignore:
 ```sh
 echo ".venv" >> .gitignore
 ```
+
+---
 
 **To recreate environment**
 
@@ -125,11 +132,11 @@ git branch -v
 # * master d5c86cd initial
 
 git fetch
-# From github.com:Alar-q/psychic-pancake  
+# From github.com:Alar-q/psychic-pancake
 # * [new branch]      main       -> origin/main
 
 git remote -v
-# origin  git@github.com:Alar-q/psychic-pancake.git (fetch)  
+# origin  git@github.com:Alar-q/psychic-pancake.git (fetch)
 # origin  git@github.com:Alar-q/psychic-pancake.git (push)
 ```
 
@@ -159,7 +166,7 @@ git status
 git push origin python-env
 ```
 
-Make Pull-Request from GitHub.
+Make **Pull-Request** from GitHub. Дополнительные commit-ы будут автоматически дополняться в pull-request-е.
 
 Then you can delete branch:
 ```sh
@@ -168,4 +175,13 @@ git branch -d <branch>
 git branch -D <branch>
 # Delete remote branch
 git push origin -d <branch>
+```
+
+Загрузи обновления внесенные на удаленном репозитории:
+```sh
+git switch main
+# git pull
+git fetch origin
+git log origin/main
+git merge origin/main
 ```

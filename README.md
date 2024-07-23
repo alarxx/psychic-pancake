@@ -3,6 +3,10 @@ none
 
 psychic-pancake.md:
 
+
+**Git**
+
+Install [[Git]]:
 ```sh
 sudo apt install git
 ```
@@ -18,8 +22,8 @@ git init
 ```
 
 ```sh
-git config --global user.name "Alar-q"
-git config --global user.email alar.akilbekov@gmail.com
+git config --global user.name "username"
+git config --global user.email email@email.com
 ```
 
 ```sh
@@ -38,8 +42,9 @@ git branch --list
 ```
 
 ---
+**Python**
 
-Install Python and [[Package Installer for Python (PIP)|PIP]]:
+Install [[Python]] and [[Package Installer for Python (PIP)|PIP]]:
 ```sh
 sudo apt install python3
 sudo apt install python3-pip
@@ -68,7 +73,7 @@ Use this environment:
 source .venv/bin/activate
 ```
 
-Check if it works:
+You can check if it works:
 ```sh
 pip install numpy
 ```
@@ -81,6 +86,8 @@ Add this environment to .gitignore:
 ```sh
 echo ".venv" >> .gitignore
 ```
+
+---
 
 **To recreate environment**
 
@@ -164,7 +171,7 @@ git status
 git push origin python-env
 ```
 
-Make Pull-Request from GitHub.
+Make **Pull-Request** from GitHub. Дополнительные commit-ы будут автоматически дополняться в pull-request-е.
 
 Then you can delete branch:
 ```sh
@@ -173,4 +180,13 @@ git branch -d <branch>
 git branch -D <branch>
 # Delete remote branch
 git push origin -d <branch>
+```
+
+Загрузи обновления внесенные на удаленном репозитории:
+```sh
+git switch main
+# git pull
+git fetch origin
+git log origin/main
+git merge origin/main
 ```
