@@ -1,20 +1,15 @@
-# psychic-pancake
-none
-
-psychic-pancake.md:
-
 ```sh
 sudo apt install git
 ```
 
 ```sh
-cd /home/john/Git
-mkdir MyProject
-ls
-MyProject
-cd ./MyProject/
+cd /home/john/Git   
+mkdir MyProject  
+ls  
+MyProject  
+cd ./MyProject/  
 # ~/Git/MyProject
-git init
+git init   
 ```
 
 ```sh
@@ -61,7 +56,7 @@ Create environment:
 ```sh
 python3 -m venv .venv
 ```
-	-m - module-name, finds sys.path and runs corresponding .py file
+	-m - module-name, finds sys.path and runs corresponding .py file 
 
 Use this environment:
 ```sh
@@ -130,11 +125,11 @@ git branch -v
 # * master d5c86cd initial
 
 git fetch
-# From github.com:Alar-q/psychic-pancake
+# From github.com:Alar-q/psychic-pancake  
 # * [new branch]      main       -> origin/main
 
 git remote -v
-# origin  git@github.com:Alar-q/psychic-pancake.git (fetch)
+# origin  git@github.com:Alar-q/psychic-pancake.git (fetch)  
 # origin  git@github.com:Alar-q/psychic-pancake.git (push)
 ```
 
