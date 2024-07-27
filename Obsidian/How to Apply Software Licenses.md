@@ -288,7 +288,7 @@ This Source Code Form is subject to the terms of the Mozilla Public License, v. 
 ```
 Мне нравится.
 
-Кажется, если есть LICENSE файл, то header-ы в каждый файл вообще можно не добавлять.
+Кажется, если есть LICENSE файл, то header-ы в каждый файл вообще можно не добавлять (хм...).
 
  ---
 
