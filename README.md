@@ -2,6 +2,9 @@
 
 > Random name
 
+IANAL
+I'm not a lawer
+
 **Разрабираю basic под Debian:**
 - SSH,
 - Git, Branching and Pull Requests
